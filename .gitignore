@@ -1,6 +1,11 @@
 **
+!system_template_de1_soc/
 !*.v
 !*.qsys
+!system_template_de1_soc/software/
+!system_template_de1_soc/software/*
+system_template_de1_soc/software/*_bsp
+!system_template_de1_soc/software/*/*.c
 !DSD_coursework_DE1-SoC.pdf
 !README.md
 !Python/
