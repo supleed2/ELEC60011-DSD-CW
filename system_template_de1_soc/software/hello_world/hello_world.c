@@ -48,8 +48,8 @@ void generateVector(float x[N]){
 
 float sumVector(float x[], int M){
 	float y = 0.0;
-	for(int i = 0; i < M; i++){
-		y += 0.5 * x[i] + x[i] * x[i] * cos((x[i] - 128.0) / 128.0);
+	for(int i = 0;i<=M;i++){
+		y += (float)((int)x[i]>>1) + x[i]*x[i]*cosf((x[i]-128)*0.0078125);
 	}
 	return y;
 }
